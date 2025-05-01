@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./sass/style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <section class="calculator">
+      <nav>
+      <div class="logo">ISB Calculator</div>
+        <div class="home">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </nav>
+      <input type="text" id="display" disabled />
+      <div class="buttons">
+        <div class="sisi 1">
+          <button class="button" onclick="clearDisplay()">C</button>
+          <button class="button" onclick="appendNumber('7')">7</button>
+          <button class="button" onclick="appendNumber('4')">4</button>
+          <button class="button" onclick="appendNumber('1')">1</button>
+          <button class="button" onclick="appendNumber('0')">0</button>
+        </div>
+        <div class="sisi 2">
+          <button
+            class="button operator"
+            id="persen"
+            onclick="appendNumber('%')"
+          >
+            %
+          </button>
+          <button class="button" onclick="appendNumber('8')">8</button>
+          <button class="button" onclick="appendNumber('5')">5</button>
+          <button class="button" onclick="appendNumber('2')">2</button>
+          <button class="button" onclick="appendNumber('.')">.</button>
+        </div>
+        <div class="sisi 3">
+          <button class="button operator" id="bagi" onclick="appendNumber('/')">
+            /
+          </button>
+          <button class="button" onclick="appendNumber('9')">9</button>
+          <button class="button" onclick="appendNumber('6')">6</button>
+          <button class="button" onclick="appendNumber('3')">3</button>
+          <button class="button" onclick="hapus()">⌫</button>
+        </div>
+        <div class="sisi 4">
+          <button class="button operator" id="pangkat" onclick="appendNumber('**')">
+            ^
+          </button>
+          <button class="button operator" id="kali" onclick="appendNumber('*')">
+            X
+          </button>
+          <button
+            class="button operator"
+            id="minus"
+            onclick="appendNumber('-')"
+          >
+            -
+          </button>
+          <button class="button operator" id="plus" onclick="appendNumber('+')">
+            +
+          </button>
+          <button
+            class="button equal"
+        
+            onclick="equal()"
+          >
+            =
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="footer">sebelum</section>
+    <script src="./script.js"></script>
+  </body>
+</html>
