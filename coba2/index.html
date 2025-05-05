@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+// cara di windsurf
+        function ask(question, yes, no) {
+          if (confirm(question)) yes();
+          else no();
+        }
+        ask(
+          "You agree?",
+          () => alert("You agreed."),
+          () => alert("You canceled the execution.")
+        );
+// cara di buku
+    //   function ask(question, yes, no) {
+    //   if (confirm(question)) {
+    //     yes();   
+    //   } else {
+    //     no();
+    //   }
+    // }
+    //   function showOk() {
+    //     alert("Anda setuju!");
+    //   }
+
+    //   function showCancel() {
+    //     alert("Anda membatalkan!");
+    //   }
+
+    //   ask("Apakah Anda setuju?", showOk, showCancel);
+    </script>
+  </body>
+</html>
